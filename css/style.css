@@ -1,0 +1,50 @@
+/*
+ * Archivo: css/style.css
+ */
+
+/* --- Estilos Generales --- */
+body {
+    /* Define una fuente moderna y legible para todo el sitio. */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Un fondo gris muy claro, hace que los elementos resalten. */
+    background-color: #f0f2f5;
+    
+    /* Color de texto principal. */
+    color: #343a40;
+}
+
+/* --- Barra de Navegación (Navbar) --- */
+.navbar {
+    /* Color de fondo principal para la barra (un azul profesional). */
+    /* !important fuerza a que este estilo anule el de Bootstrap. */
+    background-color: #0056b3 !important;
+    
+    /* Sombra sutil para darle profundidad. */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Color para los enlaces de la barra de navegación. */
+.nav-link {
+    color: rgba(255,255,255,.8) !important;
+    transition: color 0.2s ease-in-out; /* Transición suave al pasar el cursor. */
+}
+
+/* Color para los enlaces al pasar el cursor (hover) o cuando están activos. */
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+/* --- Tarjeta (Card) para Login/Registro --- */
+/* Esta clase la usaremos para centrar los formularios de login
+  y registro, dándoles una apariencia limpia.
+*/
+.auth-card {
+    width: 100%;
+    max-width: 450px; /* Ancho máximo del formulario. */
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.75rem; /* Bordes redondeados. */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05); /* Sombra suave. */
+}
